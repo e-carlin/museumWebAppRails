@@ -1,0 +1,641 @@
+ecarlin@Androis-VirtualBox:~$ sudo apt-get install postgresql postgresql-contrib[sudo] password for ecarlin: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  snap-confine
+Use 'sudo apt autoremove' to remove it.
+The following additional packages will be installed:
+  postgresql-9.5 postgresql-client-9.5 postgresql-client-common
+  postgresql-common postgresql-contrib-9.5 sysstat
+Suggested packages:
+  postgresql-doc locales-all postgresql-doc-9.5 libdbd-pg-perl isag
+The following NEW packages will be installed:
+  postgresql postgresql-9.5 postgresql-client-9.5 postgresql-client-common
+  postgresql-common postgresql-contrib postgresql-contrib-9.5 sysstat
+0 upgraded, 8 newly installed, 0 to remove and 118 not upgraded.
+Need to get 4,757 kB of archives.
+After this operation, 19.2 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 postgresql-client-common all 173ubuntu0.1 [28.4 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 postgresql-client-9.5 amd64 9.5.10-0ubuntu0.16.04 [861 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 postgresql-common all 173ubuntu0.1 [154 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 postgresql-9.5 amd64 9.5.10-0ubuntu0.16.04 [3,012 kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 postgresql all 9.5+173ubuntu0.1 [5,450 B]
+Get:6 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 postgresql-contrib-9.5 amd64 9.5.10-0ubuntu0.16.04 [448 kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 postgresql-contrib all 9.5+173ubuntu0.1 [5,456 B]
+Get:8 http://us.archive.ubuntu.com/ubuntu xenial-updates/main amd64 sysstat amd64 11.2.0-1ubuntu0.2 [243 kB]
+Fetched 4,757 kB in 1s (3,138 kB/s)
+Preconfiguring packages ...
+Selecting previously unselected package postgresql-client-common.
+(Reading database ... 190491 files and directories currently installed.)
+Preparing to unpack .../postgresql-client-common_173ubuntu0.1_all.deb ...
+Unpacking postgresql-client-common (173ubuntu0.1) ...
+Selecting previously unselected package postgresql-client-9.5.
+Preparing to unpack .../postgresql-client-9.5_9.5.10-0ubuntu0.16.04_amd64.deb ...
+Unpacking postgresql-client-9.5 (9.5.10-0ubuntu0.16.04) ...
+Selecting previously unselected package postgresql-common.
+Preparing to unpack .../postgresql-common_173ubuntu0.1_all.deb ...
+Adding 'diversion of /usr/bin/pg_config to /usr/bin/pg_config.libpq-dev by postgresql-common'
+Unpacking postgresql-common (173ubuntu0.1) ...
+Selecting previously unselected package postgresql-9.5.
+Preparing to unpack .../postgresql-9.5_9.5.10-0ubuntu0.16.04_amd64.deb ...
+Unpacking postgresql-9.5 (9.5.10-0ubuntu0.16.04) ...
+Selecting previously unselected package postgresql.
+Preparing to unpack .../postgresql_9.5+173ubuntu0.1_all.deb ...
+Unpacking postgresql (9.5+173ubuntu0.1) ...
+Selecting previously unselected package postgresql-contrib-9.5.
+Preparing to unpack .../postgresql-contrib-9.5_9.5.10-0ubuntu0.16.04_amd64.deb ...
+Unpacking postgresql-contrib-9.5 (9.5.10-0ubuntu0.16.04) ...
+Selecting previously unselected package postgresql-contrib.
+Preparing to unpack .../postgresql-contrib_9.5+173ubuntu0.1_all.deb ...
+Unpacking postgresql-contrib (9.5+173ubuntu0.1) ...
+Selecting previously unselected package sysstat.
+Preparing to unpack .../sysstat_11.2.0-1ubuntu0.2_amd64.deb ...
+Unpacking sysstat (11.2.0-1ubuntu0.2) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for systemd (229-4ubuntu21) ...
+Processing triggers for ureadahead (0.100.0-19) ...
+Processing triggers for doc-base (0.10.7) ...
+Processing 1 added doc-base file...
+Setting up postgresql-client-common (173ubuntu0.1) ...
+Setting up postgresql-client-9.5 (9.5.10-0ubuntu0.16.04) ...
+update-alternatives: using /usr/share/postgresql/9.5/man/man1/psql.1.gz to provide /usr/share/man/man1/psql.1.gz (psql.1.gz) in auto mode
+Setting up postgresql-common (173ubuntu0.1) ...
+Adding user postgres to group ssl-cert
+
+Creating config file /etc/postgresql-common/createcluster.conf with new version
+
+Creating config file /etc/logrotate.d/postgresql-common with new version
+Building PostgreSQL dictionaries from installed myspell/hunspell packages...
+  en_us
+Removing obsolete dictionary files:
+Setting up postgresql-9.5 (9.5.10-0ubuntu0.16.04) ...
+Unescaped left brace in regex is deprecated, passed through in regex; marked by <-- HERE in m/(?<!\\)\${ <-- HERE ([^}]+)}/ at /usr/sbin/pam_getenv line 78.
+Unescaped left brace in regex is deprecated, passed through in regex; marked by <-- HERE in m/(?<!\\)\${ <-- HERE ([^}]+)}/ at /usr/sbin/pam_getenv line 78.
+Unescaped left brace in regex is deprecated, passed through in regex; marked by <-- HERE in m/(?<!\\)\${ <-- HERE ([^}]+)}/ at /usr/sbin/pam_getenv line 78.
+Unescaped left brace in regex is deprecated, passed through in regex; marked by <-- HERE in m/(?<!\\)\${ <-- HERE ([^}]+)}/ at /usr/sbin/pam_getenv line 78.
+Unescaped left brace in regex is deprecated, passed through in regex; marked by <-- HERE in m/(?<!\\)\${ <-- HERE ([^}]+)}/ at /usr/sbin/pam_getenv line 78.
+Unescaped left brace in regex is deprecated, passed through in regex; marked by <-- HERE in m/(?<!\\)\${ <-- HERE ([^}]+)}/ at /usr/sbin/pam_getenv line 78.
+Unescaped left brace in regex is deprecated, passed through in regex; marked by <-- HERE in m/(?<!\\)\${ <-- HERE ([^}]+)}/ at /usr/sbin/pam_getenv line 78.
+Unescaped left brace in regex is deprecated, passed through in regex; marked by <-- HERE in m/(?<!\\)\${ <-- HERE ([^}]+)}/ at /usr/sbin/pam_getenv line 78.
+Unescaped left brace in regex is deprecated, passed through in regex; marked by <-- HERE in m/(?<!\\)\${ <-- HERE ([^}]+)}/ at /usr/sbin/pam_getenv line 78.
+Unescaped left brace in regex is deprecated, passed through in regex; marked by <-- HERE in m/(?<!\\)\${ <-- HERE ([^}]+)}/ at /usr/sbin/pam_getenv line 78.
+Unescaped left brace in regex is deprecated, passed through in regex; marked by <-- HERE in m/(?<!\\)\${ <-- HERE ([^}]+)}/ at /usr/sbin/pam_getenv line 78.
+Unescaped left brace in regex is deprecated, passed through in regex; marked by <-- HERE in m/(?<!\\)\${ <-- HERE ([^}]+)}/ at /usr/sbin/pam_getenv line 78.
+Unescaped left brace in regex is deprecated, passed through in regex; marked by <-- HERE in m/(?<!\\)\${ <-- HERE ([^}]+)}/ at /usr/sbin/pam_getenv line 78.
+Unescaped left brace in regex is deprecated, passed through in regex; marked by <-- HERE in m/(?<!\\)\${ <-- HERE ([^}]+)}/ at /usr/sbin/pam_getenv line 78.
+Unescaped left brace in regex is deprecated, passed through in regex; marked by <-- HERE in m/(?<!\\)\${ <-- HERE ([^}]+)}/ at /usr/sbin/pam_getenv line 78.
+Creating new cluster 9.5/main ...
+  config /etc/postgresql/9.5/main
+  data   /var/lib/postgresql/9.5/main
+  locale en_US.UTF-8
+  socket /var/run/postgresql
+  port   5432
+update-alternatives: using /usr/share/postgresql/9.5/man/man1/postmaster.1.gz to provide /usr/share/man/man1/postmaster.1.gz (postmaster.1.gz) in auto mode
+Setting up postgresql (9.5+173ubuntu0.1) ...
+Setting up postgresql-contrib-9.5 (9.5.10-0ubuntu0.16.04) ...
+Setting up postgresql-contrib (9.5+173ubuntu0.1) ...
+Setting up sysstat (11.2.0-1ubuntu0.2) ...
+
+Creating config file /etc/default/sysstat with new version
+update-alternatives: using /usr/bin/sar.sysstat to provide /usr/bin/sar (sar) in auto mode
+Processing triggers for systemd (229-4ubuntu21) ...
+Processing triggers for ureadahead (0.100.0-19) ...
+ecarlin@Androis-VirtualBox:~$ ls
+1        Desktop    examples.desktop           Music     Templates
+Android  Documents  museum_monitoring_sensors  Pictures  Videos
+Banter   Downloads  museumWebAppRailsCopy      Public
+ecarlin@Androis-VirtualBox:~$ cd museum
+-bash: cd: museum: No such file or directory
+ecarlin@Androis-VirtualBox:~$ cd museumWebAppRailsCopy/
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ atom .
+No command 'atom' found, did you mean:
+ Command 'atom4' from package 'atom4' (universe)
+ Command 'atobm' from package 'x11-apps' (main)
+ Command 'atoms' from package 'horae' (multiverse)
+ Command 'atrm' from package 'at' (main)
+ Command 'atop' from package 'atop' (universe)
+atom: command not found
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ gedit .
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ gedit Gemfile
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ ls
+app        db            getBradsServerReady.txt   public          test
+bin        deploy.sh     howToUseRailsConsole.txt  Rakefile        tmp
+config     Gemfile       lib                       README.md       vendor
+config.ru  Gemfile.lock  log                       requestTest.py
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ bundle install
+Using rake 12.0.0
+Using concurrent-ruby 1.0.4
+Using i18n 0.7.0
+Using minitest 5.10.1
+Using thread_safe 0.3.5
+Using tzinfo 1.2.2
+Using activesupport 5.0.1
+Using builder 3.2.3
+Using erubis 2.7.0
+Using mini_portile2 2.1.0
+Using nokogiri 1.7.0.1
+Using rails-dom-testing 2.0.2
+Using loofah 2.0.3
+Using rails-html-sanitizer 1.0.3
+Using actionview 5.0.1
+Using rack 2.0.1
+Using rack-test 0.6.3
+Using actionpack 5.0.1
+Using nio4r 1.2.1
+Using websocket-extensions 0.1.2
+Using websocket-driver 0.6.5
+Using actioncable 5.0.1
+Using globalid 0.3.7
+Using activejob 5.0.1
+Using mime-types-data 3.2016.0521
+Using mime-types 3.1
+Using mail 2.6.4
+Using actionmailer 5.0.1
+Using activemodel 5.0.1
+Using arel 7.1.4
+Using activerecord 5.0.1
+Using execjs 2.7.0
+Using autoprefixer-rails 6.5.2
+Using bcrypt 3.1.11
+Using sass 3.4.23
+Using bootstrap-sass 3.3.7
+Using bundler 1.16.1
+Using byebug 9.0.6
+Using chartkick 2.2.3
+Using email_validator 1.6.0
+Using method_source 0.8.2
+Using thor 0.19.4
+Using railties 5.0.1
+Using sprockets 3.7.1
+Using sprockets-rails 3.2.0
+Using rails 5.0.1
+Using clearance 1.15.1
+Using coffee-script-source 1.12.2
+Using coffee-script 2.4.1
+Using coffee-rails 4.2.1
+Using dateslices 0.0.4
+Using debug_inspector 0.0.2
+Using ffi 1.9.17
+Using multi_json 1.12.1
+Using jbuilder 2.6.1
+Using jquery-rails 4.2.2
+Using rb-fsevent 0.9.8
+Using rb-inotify 0.9.7
+Using listen 3.0.8
+Using pg 0.18.4
+Using puma 3.6.2
+Using tilt 2.0.5
+Using sass-rails 5.0.6
+Using spring 2.0.1
+Using spring-watcher-listen 2.0.1
+Using turbolinks-source 5.0.0
+Using turbolinks 5.0.1
+Using uglifier 3.0.4
+Using web-console 3.4.0
+Bundle complete! 20 Gemfile dependencies, 69 gems now installed.
+Gems in the group production were not installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ gedit config/database.yml 
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ sudo -su postgres
+bash: /home/ecarlin/.bashrc: Permission denied
+postgres@Androis-VirtualBox:~/museumWebAppRailsCopy$ psql
+could not change directory to "/home/ecarlin/museumWebAppRailsCopy": Permission denied
+psql (9.5.10)
+Type "help" for help.
+
+postgres=# \dt
+No relations found.
+postgres=# \q
+postgres@Androis-VirtualBox:~/museumWebAppRailsCopy$ exit
+exit
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ rake db:setup
+FATAL:  Peer authentication failed for user "e-carlin"
+Couldn't create database for {"adapter"=>"postgresql", "encoding"=>"unicode", "pool"=>5, "username"=>"e-carlin", "password"=>nil, "timeout"=>5000, "database"=>"db/development"}
+rake aborted!
+PG::ConnectionBad: FATAL:  Peer authentication failed for user "e-carlin"
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `new'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_handling.rb:91:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/postgresql_database_tasks.rb:6:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/postgresql_database_tasks.rb:15:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:109:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:129:in `block in create_current'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:292:in `block in each_current_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:291:in `each'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:291:in `each_current_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:128:in `create_current'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/railties/databases.rake:27:in `block (2 levels) in <top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/rake-12.0.0/exe/rake:27:in `<top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `<main>'
+Tasks: TOP => db:setup => db:schema:load_if_ruby => db:create
+(See full trace by running task with --trace)
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ gedit config/database.yml 
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ rake db:setup
+FATAL:  role "ecarlin" does not exist
+Couldn't create database for {"adapter"=>"postgresql", "encoding"=>"unicode", "pool"=>5, "username"=>"ecarlin", "password"=>"Abc123..", "timeout"=>5000, "database"=>"db/development"}
+rake aborted!
+ActiveRecord::NoDatabaseError: FATAL:  role "ecarlin" does not exist
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:675:in `rescue in connect'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_handling.rb:91:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/postgresql_database_tasks.rb:6:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/postgresql_database_tasks.rb:15:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:109:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:129:in `block in create_current'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:292:in `block in each_current_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:291:in `each'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:291:in `each_current_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:128:in `create_current'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/railties/databases.rake:27:in `block (2 levels) in <top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/rake-12.0.0/exe/rake:27:in `<top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `<main>'
+PG::ConnectionBad: FATAL:  role "ecarlin" does not exist
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `new'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_handling.rb:91:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/postgresql_database_tasks.rb:6:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/postgresql_database_tasks.rb:15:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:109:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:129:in `block in create_current'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:292:in `block in each_current_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:291:in `each'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:291:in `each_current_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:128:in `create_current'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/railties/databases.rake:27:in `block (2 levels) in <top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/rake-12.0.0/exe/rake:27:in `<top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `<main>'
+Tasks: TOP => db:setup => db:schema:load_if_ruby => db:create
+(See full trace by running task with --trace)
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ gedit config/database.yml 
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ rake db:drop
+Database 'db/development' does not exist
+Database 'db/test' does not exist
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ rake db:create
+FATAL:  role "ecarlin" does not exist
+Couldn't create database for {"adapter"=>"postgresql", "encoding"=>"unicode", "pool"=>5, "timeout"=>5000, "database"=>"db/development"}
+rake aborted!
+ActiveRecord::NoDatabaseError: FATAL:  role "ecarlin" does not exist
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:675:in `rescue in connect'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_handling.rb:91:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/postgresql_database_tasks.rb:6:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/postgresql_database_tasks.rb:15:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:109:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:129:in `block in create_current'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:292:in `block in each_current_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:291:in `each'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:291:in `each_current_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:128:in `create_current'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/railties/databases.rake:27:in `block (2 levels) in <top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/rake-12.0.0/exe/rake:27:in `<top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `<main>'
+PG::ConnectionBad: FATAL:  role "ecarlin" does not exist
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `new'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_handling.rb:91:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/postgresql_database_tasks.rb:6:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/postgresql_database_tasks.rb:15:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:109:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:129:in `block in create_current'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:292:in `block in each_current_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:291:in `each'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:291:in `each_current_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:128:in `create_current'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/railties/databases.rake:27:in `block (2 levels) in <top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/rake-12.0.0/exe/rake:27:in `<top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `<main>'
+Tasks: TOP => db:create
+(See full trace by running task with --trace)
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ sudo -su postgres
+bash: /home/ecarlin/.bashrc: Permission denied
+postgres@Androis-VirtualBox:~/museumWebAppRailsCopy$ psql
+could not change directory to "/home/ecarlin/museumWebAppRailsCopy": Permission denied
+psql (9.5.10)
+Type "help" for help.
+
+postgres=# exit
+postgres-# \q
+postgres@Androis-VirtualBox:~/museumWebAppRailsCopy$ exit
+exit
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ gedit ~/.bashrc 
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ sudo -su postgres
+bash: /home/ecarlin/.bashrc: Permission denied
+postgres@Androis-VirtualBox:~/museumWebAppRailsCopy$ psql
+could not change directory to "/home/ecarlin/museumWebAppRailsCopy": Permission denied
+psql (9.5.10)
+Type "help" for help.
+
+postgres=# exit
+postgres-# exit
+postgres-# create role rails_db_user with login password 'I-hope-lelooska-can-keep-their-data!01';
+ERROR:  syntax error at or near "exit"
+LINE 1: exit
+        ^
+postgres=# create role rails_db_user with login password 'I-hope-lelooska-can-keep-their-data!01';
+CREATE ROLE
+postgres=# create database lelooska;
+CREATE DATABASE
+postgres=# grant all privileges on database lelooska to rails_db_user;^C
+postgres=# create role lelooska_db_user with login password 'I-hope-lelooska-can-keep-their-data!01';
+CREATE ROLE
+postgres=# grant all privileges on database lelooska to lelooska_db_user;
+GRANT
+postgres=# \q
+postgres@Androis-VirtualBox:~/museumWebAppRailsCopy$ exit
+exit
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ gedit config/database.yml 
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ rake db:create
+FATAL:  Peer authentication failed for user "lelooska_db_user"
+Couldn't create database for {"adapter"=>"postgresql", "encoding"=>"unicode", "pool"=>5, "timeout"=>5000, "user"=>"lelooska_db_user", "password"=>"I-hope-lelooska-can-keep-their-data!01", "database"=>"db/development"}
+rake aborted!
+PG::ConnectionBad: FATAL:  Peer authentication failed for user "lelooska_db_user"
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `new'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_handling.rb:91:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/postgresql_database_tasks.rb:6:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/postgresql_database_tasks.rb:15:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:109:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:129:in `block in create_current'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:292:in `block in each_current_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:291:in `each'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:291:in `each_current_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:128:in `create_current'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/railties/databases.rake:27:in `block (2 levels) in <top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/rake-12.0.0/exe/rake:27:in `<top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `<main>'
+Tasks: TOP => db:create
+(See full trace by running task with --trace)
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ sudo -u postgres createuser -s lelooska_db_user]
+could not change directory to "/home/ecarlin/museumWebAppRailsCopy": Permission denied
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ sudo -u postgres createuser -s lelooska_db_user
+could not change directory to "/home/ecarlin/museumWebAppRailsCopy": Permission denied
+createuser: creation of new role failed: ERROR:  role "lelooska_db_user" already exists
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ initdb /usr/local/
+bin/     etc/     games/   include/ lib/     man/     rvm/     sbin/    share/   src/     
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ initdb /usr/local/
+bin/     etc/     games/   include/ lib/     man/     rvm/     sbin/    share/   src/     
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ psql --version
+psql (PostgreSQL) 9.5.10
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ which psql
+/usr/bin/psql
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ rake db:create:all
+FATAL:  Peer authentication failed for user "lelooska_db_user"
+Couldn't create database for {"adapter"=>"postgresql", "encoding"=>"unicode", "pool"=>5, "timeout"=>5000, "user"=>"lelooska_db_user", "password"=>"I-hope-lelooska-can-keep-their-data!01", "database"=>"db/development"}
+rake aborted!
+PG::ConnectionBad: FATAL:  Peer authentication failed for user "lelooska_db_user"
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `new'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_handling.rb:91:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/postgresql_database_tasks.rb:6:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/postgresql_database_tasks.rb:15:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:109:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:121:in `block in create_all'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:301:in `block in each_local_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:297:in `each_value'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:297:in `each_local_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:121:in `create_all'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/railties/databases.rake:21:in `block (3 levels) in <top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/rake-12.0.0/exe/rake:27:in `<top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `<main>'
+Tasks: TOP => db:create:all
+(See full trace by running task with --trace)
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ sudo -su postgres
+bash: /home/ecarlin/.bashrc: Permission denied
+postgres@Androis-VirtualBox:~/museumWebAppRailsCopy$ psql
+could not change directory to "/home/ecarlin/museumWebAppRailsCopy": Permission denied
+psql (9.5.10)
+Type "help" for help.
+
+postgres=# create database lelooska_development;
+CREATE DATABASE
+postgres=# drop database lelooska_development;
+DROP DATABASE
+postgres=# create database lelooska_development owner lelooska_db_user;
+CREATE DATABASE
+postgres=# create database lelooska_development owner lelooska_db_userrrrr;
+ERROR:  role "lelooska_db_userrrrr" does not exist
+postgres=# \q
+postgres@Androis-VirtualBox:~/museumWebAppRailsCopy$ exit
+exit
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ gedit config/database.yml 
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ rake db:create
+FATAL:  Peer authentication failed for user "lelooska_db_user"
+Couldn't create database for {"adapter"=>"postgresql", "encoding"=>"unicode", "pool"=>5, "timeout"=>5000, "user"=>"lelooska_db_user", "password"=>"I-hope-lelooska-can-keep-their-data!01", "database"=>"lelooska_development"}
+rake aborted!
+PG::ConnectionBad: FATAL:  Peer authentication failed for user "lelooska_db_user"
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `new'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_handling.rb:91:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/postgresql_database_tasks.rb:6:in `connection'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/postgresql_database_tasks.rb:15:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:109:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:129:in `block in create_current'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:292:in `block in each_current_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:291:in `each'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:291:in `each_current_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:128:in `create_current'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/railties/databases.rake:27:in `block (2 levels) in <top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/rake-12.0.0/exe/rake:27:in `<top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `<main>'
+Tasks: TOP => db:create
+(See full trace by running task with --trace)
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ gedit config/database.yml 
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ rake db:create
+PG::InsufficientPrivilege: ERROR:  permission denied to create database
+: CREATE DATABASE "lelooska_development" ENCODING = 'unicode'
+Couldn't create database for {"adapter"=>"postgresql", "encoding"=>"unicode", "pool"=>5, "timeout"=>5000, "host"=>"localhost", "user"=>"lelooska_db_user", "password"=>"I-hope-lelooska-can-keep-their-data!01", "database"=>"lelooska_development"}
+rake aborted!
+ActiveRecord::StatementInvalid: PG::InsufficientPrivilege: ERROR:  permission denied to create database
+: CREATE DATABASE "lelooska_development" ENCODING = 'unicode'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql/database_statements.rb:98:in `async_exec'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql/database_statements.rb:98:in `block in execute'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract_adapter.rb:589:in `block in log'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract_adapter.rb:583:in `log'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql/database_statements.rb:97:in `execute'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql/schema_statements.rb:62:in `create_database'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/postgresql_database_tasks.rb:15:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:109:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:129:in `block in create_current'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:292:in `block in each_current_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:291:in `each'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:291:in `each_current_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:128:in `create_current'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/railties/databases.rake:27:in `block (2 levels) in <top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/rake-12.0.0/exe/rake:27:in `<top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `<main>'
+PG::InsufficientPrivilege: ERROR:  permission denied to create database
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql/database_statements.rb:98:in `async_exec'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql/database_statements.rb:98:in `block in execute'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract_adapter.rb:589:in `block in log'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activesupport-5.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/abstract_adapter.rb:583:in `log'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql/database_statements.rb:97:in `execute'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/connection_adapters/postgresql/schema_statements.rb:62:in `create_database'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/postgresql_database_tasks.rb:15:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:109:in `create'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:129:in `block in create_current'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:292:in `block in each_current_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:291:in `each'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:291:in `each_current_configuration'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/tasks/database_tasks.rb:128:in `create_current'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/activerecord-5.0.1/lib/active_record/railties/databases.rake:27:in `block (2 levels) in <top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/gems/rake-12.0.0/exe/rake:27:in `<top (required)>'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `eval'
+/home/ecarlin/.rvm/gems/ruby-2.3.1/bin/ruby_executable_hooks:15:in `<main>'
+Tasks: TOP => db:create
+(See full trace by running task with --trace)
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ sudo -su postgres
+bash: /home/ecarlin/.bashrc: Permission denied
+postgres@Androis-VirtualBox:~/museumWebAppRailsCopy$ psql
+could not change directory to "/home/ecarlin/museumWebAppRailsCopy": Permission denied
+psql (9.5.10)
+Type "help" for help.
+
+postgres=# alter user lelooska_db_user createdb;
+ALTER ROLE
+postgres=# \q
+postgres@Androis-VirtualBox:~/museumWebAppRailsCopy$ exit
+exit
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ rake db:create
+Database 'lelooska_development' already exists
+Database 'lelooska_development' already exists
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ rake db:drop
+Dropped database 'lelooska_development'
+Dropped database 'lelooska_development'
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ rake db:create
+Created database 'lelooska_development'
+Database 'lelooska_development' already exists
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ rake db:migrate
+== 20170123220923 CreateUsers: migrating ======================================
+-- create_table(:users)
+   -> 0.0178s
+-- add_index(:users, :email)
+   -> 0.0099s
+-- add_index(:users, :remember_token)
+   -> 0.0044s
+== 20170123220923 CreateUsers: migrated (0.0358s) =============================
+
+== 20170130002950 CreateReadings: migrating ===================================
+-- create_table(:nodes)
+   -> 0.0064s
+-- create_table(:readings)
+   -> 0.0068s
+== 20170130002950 CreateReadings: migrated (0.0133s) ==========================
+
+ecarlin@Androis-VirtualBox:~/museumWebAppRailsCopy$ rails s
+=> Booting Puma
+=> Rails 5.0.1 application starting in development on http://localhost:3000
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.6.2 (ruby 2.3.1-p112), codename: Sleepy Sunday Serenity
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://localhost:3000
+Use Ctrl-C to stop
+
