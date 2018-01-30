@@ -58,6 +58,4 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'autoprefixer-rails'
 
-group :production do
-  gem 'pg'
-end
+gem 'pg', '~> 0.18.4'
